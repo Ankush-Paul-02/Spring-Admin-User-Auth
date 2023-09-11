@@ -1,0 +1,90 @@
+/* Use a CSS reset to ensure consistent default styles across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a dark background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Dark background */
+    color: #fff; /* Light text color */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    border-radius: 10px; /* Increased border radius for a softer look */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* White shadow for glassy effect */
+}
+
+h2 {
+    color: #45b6fe;
+    margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #45b6fe; /* Highlight labels with a contrasting color */
+}
+
+/* Enhance input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: #fff; /* Light text color */
+    margin-bottom: 10px; /* Add some spacing between input fields */
+}
+
+/* Style the submit button */
+/* Style the submit button with a glowing effect */
+input[type="submit"] {
+    background: linear-gradient(to bottom, #45b6fe, #3498db);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transitions for background and box-shadow */
+    box-shadow: 0 0 10px rgba(69, 182, 254, 0.5); /* Initial box shadow */
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #3498db, #45b6fe);
+    box-shadow: 0 0 20px rgba(69, 182, 254, 0.8); /* Glow effect on hover */
+}
+
+
+/* Style success/error messages */
+.message {
+    background-color: rgba(0, 128, 0, 0.7); /* Semi-transparent green for success */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.error-message {
+    background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red for error */
+}
+
+/* Additional styles can be added as needed for specific messages */
